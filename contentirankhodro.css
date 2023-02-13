@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('Yekan.ttf');
+  }
+  body{
+  font-family: 'yekan';
+  background-color: #292828;;
+  color: #fff;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  header{
+  padding:0;
+  margin: 0;
+  z-index: 999;
+  }
+  li{
+  list-style: none;
+  }
+  a{
+  text-decoration: none;
+  color: #fff;
+  font-size:20px;
+  font-weight: 500;
+  margin: 0;
+  }
+  .nav-link:hover{
+  border-bottom: 2px solid #fff;
+  transition: 0.1s;
+  }
+  .navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin: 0;
+  }
+  .logo{
+  font-size:22px;
+  font-style: italic;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .hamburger{
+  display: none;
+  cursor: pointer;
+  }
+  .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  }
+  header .search{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  }
+  .searchBox{
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background:rgb(59, 59, 59);
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+  }
+  .searchBox.active{
+  left: 0;
+  }
+  .mekanik{
+    border-bottom: 2px solid #fff
+  }
+  .searchBox input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background:rgb(59, 59, 59);
+  font-size: 2rem;
+  color: #fff ;
+  }
+  .searchBtn{
+  position: relative;
+  left:3px;
+  top: 2px;
+  }
+  .closeBtn{
+  opacity: 0;
+  visibility: hidden;
+  }
+  .closeBtn.active{
+  opacity: 1;
+  visibility: visible;
+  }
+  @media(max-width:991px){
+    a{
+      font-size:28px;
+    }
+    .searchBtn{
+      margin-right:-5.5rem;
+      float: right;
+    }
+    .searchBtn{
+      width: 39px;
+    top:0.3rem !important;
+    }
+   .closeBtn{
+    float: right !important;
+    position: absolute;
+    top: 0;
+    margin-left:6rem !important;
+    margin-top: 10px !important;
+   }
+   .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+  opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+      }
+      .logo{
+        font-size:30px;
+       font-style: italic;
+      }
+      .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        backdrop-filter: blur(20px);
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+        
+      }
+      .nav-item{
+        margin: 20px 0;
+      }
+      .nav-menu.active{
+        left: 0;
+      }
+      .peugt405{
+        width: 150px;
+        height: 150px;
+        margin-top: 25% !important;
+        margin-left:7% !important;
+      }
+      .title-405{
+        margin-top:-10% !important;
+      }
+      .rana{
+        width: 150px;
+        height: 150px;
+        margin-top: -60% !important;
+        margin-left: 55% !important;
+      }
+      .rana-title{
+        margin-left: 70% !important;
+        margin-top: -11% !important;
+        font-size: 30px !important;
+      }
+      .car2{
+        margin-top: -20px !important;
+      }
+      .pars{
+        width: 150px;
+        height: 150px;
+        margin-left: 7% !important;
+      }
+      .pars-title{
+        margin-left:50px !important;
+        margin-top: -50px!important;
+      }
+      .car3{
+        margin-top: 40% !important;
+      }
+      .pg206{
+        width:150px;
+        height: 150px;
+        margin-top:1% !important;
+      margin-left:55% !important;
+      }
+      .pg206-title{
+        margin-left: 58% !important;
+        margin-top: -11% !important;
+      }
+      .car4{
+        margin-top: -37% !important;
+      }
+    }
+    .motor{
+        border: 1px solid #fff;
+        margin-top: 6%;
+        border-radius:10%;
+        margin-left: 10%;
+        padding-bottom: 3%;
+        cursor: pointer;
+        background-color: #fff;
+      }
+      .title-motor{
+        color:#000;
+        margin-left:17%;
+        font-size: 27px;
+        margin-top: -4%;
+        cursor: pointer;
+      }
+      .title{
+        color: #fff;
+        font-size:13px;
+        margin-top: 2%;
+        float: right;
+        margin-right: 3%;
+      }
+      .girebox{
+        background-color: #fff;
+        border-radius:10%;
+       margin-left: 33%;
+       margin-top:-40rem;
+        padding-bottom: 3%;
+        cursor: pointer;
+      }
+      .girebox-title{
+        margin-left: 40%;
+        margin-top: -4%;
+        color: #000;
+        font-size: 26px;
+        cursor: pointer;
+      }
+     .pars{
+      background-color: #fff;
+      border-radius:10%;
+     margin-left: 55%;
+     margin-top:-70% !important;
+      padding-bottom: 3%;
+      cursor: pointer;
+     }
+     .pars-title{
+      margin-left:60%;
+      margin-top: -4%;
+      color: #000;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .airbag{
+        background-color: #fff;
+        border-radius:10%;
+       margin-left: 77%;
+       margin-top:0;
+        padding-bottom: 3%;
+        cursor: pointer;
+      }
+      .airbag-title{
+        margin-left: 83%;
+        margin-top: -4%;
+        color: #000;
+        font-size: 27px;
+        cursor: pointer;
+      }
+      .car2{
+        display: block;
+        margin-top:-7px;
+      }
+      .car3{
+        margin-top: -20px;
+      }
+      .car4{
+        margin-top: -245px;
+      }

@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('Yekan.ttf');
+  }
+  body{
+  font-family: 'yekan';
+  background: #000;
+  color: #fff;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  header{
+  padding:0;
+  margin: 0;
+  z-index: 999;
+  }
+  li{
+  list-style: none;
+  }
+  a{
+  text-decoration: none;
+  color: #fff;
+  font-size:20px;
+  font-weight: 500;
+  margin: 0;
+  }
+  .nav-link:hover{
+  border-bottom: 2px solid #fff;
+  transition: 0.1s;
+  }
+  .navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin: 0;
+  }
+  .logo{
+  font-size:22px;
+  font-style: italic;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .hamburger{
+  display: none;
+  cursor: pointer;
+  }
+  .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  }
+  header .search{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  }
+  .searchBox{
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background:rgb(59, 59, 59);
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+  }
+  .searchBox.active{
+  left: 0;
+  }
+  .mekanik{
+    border-bottom: 2px solid #fff
+  }
+  .searchBox input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background:rgb(59, 59, 59);
+  font-size: 2rem;
+  color: #fff ;
+  }
+  .searchBtn{
+  position: relative;
+  left:3px;
+  top: 2px;
+  }
+  .closeBtn{
+  opacity: 0;
+  visibility: hidden;
+  }
+  .closeBtn.active{
+  opacity: 1;
+  visibility: visible;
+  }
+  @media(max-width:991px){
+    a{
+      font-size:28px;
+    }
+    .searchBtn{
+      margin-right:-5.5rem;
+      float: right;
+    }
+    .searchBtn{
+      width: 39px;
+    top:0.3rem !important;
+    }
+   .closeBtn{
+    float: right !important;
+    position: absolute;
+    top: 0;
+    margin-left:6rem !important;
+    margin-top: 10px !important;
+   }
+   .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+  opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+      }
+      .logo{
+        font-size:30px;
+       font-style: italic;
+      }
+      .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        backdrop-filter: blur(20px);
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+        
+      }
+      .nav-item{
+        margin: 20px 0;
+      }
+      .nav-menu.active{
+        left: 0;
+      }
+      .peugt405{
+        width: 150px;
+        height: 150px;
+        margin-top: 8% !important;
+        margin-left:7% !important;
+      }
+      .title-405{
+        margin-top:-10% !important;
+        font-size: 19px !important;
+        margin-top: -10% !important;
+        margin-left: 18% !important;
+      }
+      .rana{
+        width: 150px;
+        height: 150px;
+        margin-top: -70% !important;
+        margin-left: 55% !important;
+      }
+      .rana-title{
+        margin-left: 71% !important;
+        margin-top: -9% !important;
+        font-size: 20px !important;
+      }
+      .car2{
+        margin-top: -22px !important;
+      }
+      .pars{
+        width: 150px;
+        height: 150px;
+        margin-left: 7% !important;
+        margin-top: -80px !important;
+      }
+      .pars-title{
+        margin-left:65px !important;
+        margin-top: -38px!important;
+        font-size: 19px !important;
+      }
+      .car3{
+        margin-top:39% !important;
+      }
+      .pg206{
+        width:150px;
+        height: 150px;
+        margin-top:1% !important;
+      margin-left:55% !important;
+      }
+      .pg206-title{
+        margin-left: 64% !important;
+        margin-top: -10% !important;
+        font-size: 19px !important;
+      }
+      .car4{
+        margin-top: -37% !important;
+      }
+      .samand{
+        width:150px;
+        height: 150px;
+        margin-left: 7% !important;
+        margin-top: 3%;
+      }
+      .samand-title{
+        margin-top: -11% !important;
+        font-size: 22px !important;
+        margin-left: 20% !important;
+      }
+      .tondar{
+        width:150px;
+        height: 150px;
+        margin-left: 55% !important;
+      }
+      .tondar-title{
+        margin-left: 66% !important;
+        margin-top: -10% !important;
+        font-size: 19px !important;
+
+      }
+      .car6{
+        margin-top: -3% !important;
+      }
+      .dena{
+        width:150px;
+        height: 150px;
+        margin-left: 7% !important;
+        margin-top: 10% !important;
+      }
+      .dena-title{
+        margin-left: 24% !important;
+        margin-top: -11% !important;
+        font-size: 22px !important;
+      }
+      .roa{
+        width:150px;
+        height: 150px;
+        margin-left: 55% !important;
+        margin-top: -20% !important;
+      }
+      .roa-title{
+        margin-left: 65% !important;
+        margin-top: -12% !important;
+        font-size: 19px !important;
+      }
+      .car8{
+        margin-top: -15% !important;
+      }
+      .peykan{
+        width:150px;
+        height: 150px;
+        margin-left: 7% !important;
+      }
+      .peykan-title{
+        margin-top: -10% !important;
+        margin-left: 17% !important;
+        font-size: 19px !important;
+      }
+      .car9{
+        margin-top:7% !important;
+      }
+      .vitara2000{
+        width:150px;
+        height: 150px;
+        margin-left: 55% !important;
+        margin-top: -40% !important;
+      }
+      .vitara2400-title{
+        margin-left: 15% !important;
+        margin-top: -9% !important;
+        font-size: 19px !important;
+      }
+      .car10{
+        margin-top: -3% !important;
+      }
+      .vitara-title{
+        margin-left: 64% !important;
+        margin-top: -35px !important;
+        font-size: 19px !important;
+      }
+      .vitara2400{
+        width:150px;
+        height: 150px;
+        margin-left: 7% !important;
+        margin-top: 10% !important;
+      }
+      .car11{
+        margin-top: -6% !important;
+      }
+      .viana{
+        width:150px;
+        height: 150px;
+        margin-left: 55% !important;
+      }
+      .viana-title{
+        margin-left:67% !important;
+        margin-top: -11% !important;
+      }
+      .car12{
+        margin-top: -18px !important;
+      }
+}
+.car{
+  display:block;
+  justify-content: space-around;
+}
+.car2{
+  display: block;
+  margin-top:-9px;
+}
+.car3{
+  margin-top: -20px;
+}
+.car4{
+  margin-top: -245px;
+}
+.car5{
+  margin-top:5%;
+}
+.car6{
+  margin-top: -20px;
+}
+.car7{
+  margin-top: -10px;
+}
+.car8{
+  margin-top: -18%;
+}
+.car9{
+  margin-top: 5%;
+}
+.car10{
+  margin-top: -13px;
+}
+.car11{
+  margin-top:-10px;
+}
+.car12{
+  margin-top: -15px;
+}
+.peugt405{
+    border: 1px solid #fff;
+    margin-top: 6%;
+    border-radius:10%;
+    margin-left: 10%;
+    padding-bottom: 3%;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  .title-405{
+    color:#000;
+    margin-left:16%;
+    font-size: 25px;
+    margin-top: -4%;
+    cursor: pointer;
+  }
+  .title{
+    color: #fff;
+    font-size:13px;
+    margin-top: 2%;
+    float: right;
+    margin-right: 3%;
+  }
+  .rana{
+    background-color: #fff;
+    border-radius:10%;
+   margin-left: 33%;
+   margin-top:-40rem;
+    padding-bottom: 3%;
+    cursor: pointer;
+  }
+  .rana-title{
+    margin-left: 41%;
+    margin-top: -4%;
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+  }
+ .pars{
+  background-color: #fff;
+  border-radius:10%;
+ margin-left: 55%;
+ margin-top:-70% !important;
+  padding-bottom: 3%;
+  cursor: pointer;
+ }
+ .pars-title{
+  margin-left:60%;
+  margin-top: -4%;
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+}
+.pg206{
+  background-color: #fff;
+  border-radius:10%;
+ margin-left: 77%;
+ margin-top:0;
+  padding-bottom: 3%;
+  cursor: pointer;
+}
+.pg206-title{
+  margin-left: 82%;
+  margin-top: -4%;
+  color: #000;
+  font-size: 27px;
+  cursor: pointer;
+}
+.samand{
+  background-color: #fff;
+  border-radius:10%;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:9.5%;
+}
+.samand-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 16%;
+  font-size:30px;
+  cursor: pointer;
+}
+.tondar{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:32.5%;
+  margin-top: -90rem;
+}
+.tondar-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 39%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.dena{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:55%;
+  margin-top: -90rem;
+}
+.dena-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 63%;
+  font-size:30px;
+  cursor: pointer;
+}
+.roa{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:77%;
+}
+.roa-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 82%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.peykan{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:9%;
+}
+.peykan-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 14%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.vitara2000{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:33%;
+  margin-top: -90rem;
+}
+.vitara-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 38%;
+  font-size:30px;
+  cursor: pointer;
+}
+.vitara2400{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:55%;
+  margin-top: -90rem;
+}
+.vitara2400-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 60%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.viana{
+  background-color: #fff;
+  border-radius:10%;
+  margin-top: 0;
+  padding-bottom: 3%;
+  cursor: pointer;
+  margin-left:77%;
+  margin-top: -90rem;
+}
+.viana-title{
+  margin-top: -4%;
+  color: #000;
+  margin-left: 84%;
+  font-size:30px;
+  cursor: pointer;
+}

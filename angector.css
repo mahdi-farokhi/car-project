@@ -1,0 +1,495 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('Yekan.ttf');
+  }
+  body{
+  font-family: 'yekan';
+  background: #000;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  header{
+  padding-top:4px;
+  position: static;
+  z-index: 999;
+  }
+  li{
+  list-style: none;
+  }
+  a{
+  text-decoration: none;
+  color: #fff;
+  font-size:20px;
+  font-weight: 500;
+  }
+  .navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .hamburger{
+  display: none;
+  cursor: pointer;
+  }
+  .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  }
+  header .search{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  }
+  .searchBox{
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background:rgb(59, 59, 59);
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+  }
+  .searchBox.active{
+  left: 0;
+  }
+  .mekanik{
+    border-bottom: 2px solid #fff
+  }
+  .searchBox input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background:rgb(59, 59, 59);
+  font-size: 2rem;
+  color: #fff ;
+  }
+  .searchBtn{
+  position: relative;
+  left:3px;
+  top: 2px;
+  }
+  .closeBtn{
+  opacity: 0;
+  visibility: hidden;
+  }
+  .closeBtn.active{
+  opacity: 1;
+  visibility: visible;
+  }
+  .title{
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 4%;
+  }
+  @media(max-width:991px){
+    a{
+      font-size: 28px;
+    }
+      .searchBtn{
+        margin-right:-5.5rem;
+        float: right;
+      }
+      .searchBtn{
+        width: 39px;
+      top:0.3rem !important;
+      }
+     .closeBtn{
+      float: right !important;
+      position: absolute;
+      top: 0;
+      margin-left:5rem;
+     }
+     .title{
+      font-size:1.7rem;
+      margin-left:50%;
+     }
+     .iran-khodro{
+      width: 130px;
+      margin-left:13% !important;
+      height: 130px;
+      margin-top: 10% !important;
+     }
+     .saipa{
+      width: 130px;
+      display: inline-block;
+      height: 130px;
+      
+     }
+     .bahman-motor{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .kerman{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .citroen{
+      width: 130px;
+      height: 130px;
+      margin-left:10% !important;
+     }
+     .hyundai{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .lifan{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .renault{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .mvm{
+      width: 130px;
+      height: 130px;
+      margin-top:2% !important;
+      margin-left:10% !important;
+     }
+     .Peugeot{
+      width: 130px;
+      height: 130px;
+     }
+     .toyota{
+      width: 130px;
+      height: 130px;
+     }
+     .kia{
+      width: 130px;
+      height: 130px;
+     }
+     .Suzuki{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .mazda{
+      width: 130px;
+      height: 130px;
+     }
+     .faw{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .jac{
+      width: 130px;
+      height: 130px;
+      margin-left: 10% !important;
+     }
+     .lexuzs{
+      width: 130px;
+      height: 130px;
+      margin-left: 13%!important;
+     }
+     .changan{
+      width: 130px;
+      height: 130px;
+     }
+     .Brilliance{
+      width: 130px;
+      height: 130px;
+      margin-left: 13% !important;
+     }
+     .proton{
+      width: 130px;
+      height: 130px;
+     }
+      .text{
+        font-size: 2.5rem !important;
+       justify-content: center;
+       text-align: center;
+      }
+      
+     
+      .caption{
+        font-size:1.5rem !important;
+        margin-top:3rem !important;
+        display: none;
+      }
+      
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+  opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+      }
+      .logo{
+        font-size:30px;
+       font-style: italic;
+      }
+      .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        backdrop-filter: blur(20px);
+        background-color: rgba(0,0,0,0.2);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+        
+      }
+      .nav-item{
+        margin: 20px 0;
+      }
+      .nav-menu.active{
+        left: 0;
+      }
+  }
+  .iran-khodro{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:20px;
+    cursor: pointer;
+  }
+  .iran-khodro:hover{
+    background-color: #fff;
+  }
+  .saipa{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .saipa:hover{
+    background-color: #fff;
+  }
+  .kerman{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .kerman:hover{
+    background-color: #fff;
+  }
+  .bahman-motor{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .hyundai{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .hyundai:hover{
+    background-color: #fff;
+  }
+  .bahman-motor:hover{
+    background-color: #fff;
+  }
+  .lifan{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .lifan:hover{
+    background-color: #fff;
+  }
+  .renault{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .renault:hover{
+    background-color: #fff;
+  }
+  .mvm{
+    border: 1px solid #fff;
+    margin-left:19%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .mvm:hover{
+    background-color: #fff;
+  }
+  .Peugeot{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  
+  }
+  .Peugeot:hover{
+    background-color: #fff;
+  }
+  .toyota{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .toyota:hover{
+    background-color: #fff;
+  }
+  .kia{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .kia:hover{
+    background-color:#fff ;
+  }
+  .Suzuki{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .Suzuki:hover{
+    background-color: #fff;
+  }
+  .mazda{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .mazda:hover{
+    background-color: #fff;
+  }
+  .faw{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .faw:hover{
+    background-color: #fff;
+  }
+  .jac{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .jac:hover{
+    background-color: #fff;
+  }
+  .lexuzs{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .lexuzs:hover{
+  background-color: #fff;
+  }
+  .changan{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .changan:hover{
+    background-color: #fff;
+  }
+  .Brilliance{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .Brilliance:hover{
+    background-color: #fff;
+  }
+  .proton{
+    border: 1px solid #fff;
+    margin-left:10%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .proton:hover{
+    background-color: #fff;
+  }
+  .citroen{
+    border: 1px solid #fff;
+    margin-left:19%;
+    margin-top: 3%;
+    border-radius:10%;
+    padding:10px;
+    cursor: pointer;
+  }
+  .citroen:hover{
+    background-color: #fff;
+  }
